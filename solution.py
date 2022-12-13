@@ -1,8 +1,18 @@
 import numpy as np
 import pandas as pd
 
+test = False
+
+
+if test:
+	input_name = 'testinput.txt'
+
+else:
+	input_name = 'input.txt'
+
+	
 def read_data():
-	with open ('testinput.txt') as f:
+	with open (input_name) as f:
 		data = f.readlines()
 	return [d.strip() for d in data]
 
