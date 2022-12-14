@@ -9,5 +9,5 @@ if [ -z $1 ];
 fi
 
 
-mkdir $1 && cp solution.py $1/ && touch $1/testinput.txt && touch $1/input.txt
+mkdir $1 && cp solution_template.py $1/solution.py && touch $1/testinput.txt && touch $1/input.txt
 
